@@ -71,9 +71,9 @@ public class UserController {
         return ResponseEntity.status(200).body(userService.getAllUsersByRole(role));
     }
 
-    // 3.4 giveMeUsersWithSpecificAgeOrAbove
+    // 3.4 getAllUsersWithSpecificAgeOrAbove
     @GetMapping("/get/users-age/{age}")
-    public ResponseEntity getMeUsersWithSpecificAgeOrAbove(@PathVariable Integer age) {
-        return ResponseEntity.status(200).body(userService.getMeUsersWithSpecificAgeOrAbove(age));
+    public ResponseEntity getAllUsersWithSpecificAgeOrAbove(@PathVariable Integer age) {
+        return ResponseEntity.status(200).body(userService.getAllUsersWithSpecificAgeOrAbove(age));
     }
 }
