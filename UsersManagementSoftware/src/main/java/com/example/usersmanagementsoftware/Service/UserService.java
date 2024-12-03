@@ -78,7 +78,7 @@ public class UserService {
     }
 
     // 3.4 Endpoint to get all users with specific age or above
-    public List<User> getMeUsersWithSpecificAgeOrAbove(Integer age) {
+    public List<User> getAllUsersWithSpecificAgeOrAbove(Integer age) {
         List<User> users = userRepository.giveMeUsersWithSpecificAgeOrAbove(age);
         if (users.isEmpty()) {
             throw new ApiException("No Users With Age (" + age + ") or Above Has Been Found.");
